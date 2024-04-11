@@ -1,18 +1,32 @@
 <?php
 /**
+<<<<<<< HEAD
  * PHP Version 5.3
+=======
+ * PHP Version 8.1
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
  *
  * @package     Shmanic.Plugin
  * @subpackage  Ldap.Password
  * @author      Shaun Maunder <shaun@shmanic.com>
+<<<<<<< HEAD
  *
+=======
+ * @edited		2024
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
  * @copyright   Copyright (C) 2011-2013 Shaun Maunder. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 defined('JPATH_PLATFORM') or die;
 
+<<<<<<< HEAD
 jimport('joomla.plugin.plugin');
+=======
+use Joomla\CMS\Plugin\CMSPlugin;
+use Joomla\CMS\Log\Log;
+use Joomla\CMS\Language\Text;
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 
 /**
  * LDAP User Password Plugin
@@ -21,7 +35,11 @@ jimport('joomla.plugin.plugin');
  * @subpackage  Ldap.Password
  * @since       2.0
  */
+<<<<<<< HEAD
 class PlgLdapPassword extends JPlugin
+=======
+class PlgLdapPassword extends CMSPlugin
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 {
 	/**
 	 * Constructor
@@ -84,12 +102,20 @@ class PlgLdapPassword extends JPlugin
 					$authenticate
 				);
 
+<<<<<<< HEAD
 				SHLog::add(JText::sprintf('PLG_LDAP_PASSWORD_INFO_12411', $username), 12411, JLog::INFO, 'ldap');
+=======
+				SHLog::add(Text::sprintf('PLG_LDAP_PASSWORD_INFO_12411', $username), 12411, Log::INFO, 'ldap');
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 			}
 			catch (Exception $e)
 			{
 				// Log and Error out
+<<<<<<< HEAD
 				SHLog::add($e, 12401, JLog::ERROR, 'ldap');
+=======
+				SHLog::add($e, 12401, Log::ERROR, 'ldap');
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 
 				return false;
 			}

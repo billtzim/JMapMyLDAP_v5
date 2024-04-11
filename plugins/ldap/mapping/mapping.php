@@ -1,18 +1,29 @@
 <?php
 /**
+<<<<<<< HEAD
  * PHP Version 8
+=======
+ * PHP Version 8.1
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
  *
  * @package     Shmanic.Plugin
  * @subpackage  Ldap.Mapping
  * @author      Shaun Maunder <shaun@shmanic.com>
+<<<<<<< HEAD
  *
+=======
+ * @edited		2024
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
  * @copyright   Copyright (C) 2011-2013 Shaun Maunder. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 defined('JPATH_PLATFORM') or die;
 
+<<<<<<< HEAD
 //jimport('joomla.plugin.plugin');
+=======
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 use Joomla\CMS\Plugin\CMSPlugin;
 use Joomla\CMS\Log\Log;
 use Joomla\CMS\User\User;
@@ -1003,7 +1014,11 @@ class PlgLdapMapping extends CMSPlugin
  * @subpackage  Ldap.Mapping
  * @since       2.0
  */
+<<<<<<< HEAD
 class SHLdapMappingEntry extends JObject
+=======
+class SHLdapMappingEntry extends CMSObject
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 {
 	/**
 	 * An array of RDNs to form the DN

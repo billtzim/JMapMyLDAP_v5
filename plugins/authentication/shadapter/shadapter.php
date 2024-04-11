@@ -5,10 +5,16 @@
  * @package     Shmanic.Plugins
  * @subpackage  Authentication
  * @author      Shaun Maunder <shaun@shmanic.com>
+<<<<<<< HEAD
  *
  * @copyright   Copyright (C) 2011-2013 Shaun Maunder. All rights reserved.
  * edited for Joomla 5
  * @license     GNU General Public License version 3 or later; see LICENSE.txt
+=======
+ * @edited		2024
+ * @copyright   Copyright (C) 2011-2013 Shaun Maunder. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
  */
 
 defined('JPATH_PLATFORM') or die;

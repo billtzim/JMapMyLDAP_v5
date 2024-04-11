@@ -1,16 +1,30 @@
 <?php
 /**
+<<<<<<< HEAD
  * PHP Version 5.3
+=======
+ * PHP Version 8.1
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
  *
  * @package    Shmanic.Scripts
  * @author     Shaun Maunder <shaun@shmanic.com>
  *
  * @copyright  Copyright (C) 2011-2013 Shaun Maunder. All rights reserved.
+<<<<<<< HEAD
+=======
+ * @edited 		2024
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 defined('JPATH_PLATFORM') or die;
 
+<<<<<<< HEAD
+=======
+use Joomla\CMS\Factory;
+use Joomla\CMS\Language\Text;
+
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 /**
  * Installer script for com_shldap.
  *
@@ -25,7 +39,11 @@ class Com_ShldapInstallerScript
 	 * @var    string
 	 * @since  2.0
 	 */
+<<<<<<< HEAD
 	const MIN_PHP_VERSION = '5.3.0';
+=======
+	const MIN_PHP_VERSION = '8.1.0';
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 
 	/**
 	 * Minimum Platform version to install this extension.
@@ -33,7 +51,11 @@ class Com_ShldapInstallerScript
 	 * @var    string
 	 * @since  2.0
 	 */
+<<<<<<< HEAD
 	const MIN_PLATFORM_VERSION = '2.0.1.8';
+=======
+	const MIN_PLATFORM_VERSION = '5.0';
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 
 	/**
 	 * Method to run before an install/update/uninstall method.
@@ -47,11 +69,19 @@ class Com_ShldapInstallerScript
 	 */
 	public function preflight($type, $parent)
 	{
+<<<<<<< HEAD
 		// Check the PHP version is at least at 5.3.0
 		if (version_compare(PHP_VERSION, self::MIN_PHP_VERSION, '<'))
 		{
 			JFactory::getApplication()->enqueueMessage(
 				JText::sprintf('COM_SHLDAP_PREFLIGHT_PHP_VERSION', PHP_VERSION, self::MIN_PHP_VERSION),
+=======
+		// Check the PHP version is at least at 8.1.0
+		if (version_compare(PHP_VERSION, self::MIN_PHP_VERSION, '<'))
+		{
+			Factory::getApplication()->enqueueMessage(
+				Text::sprintf('COM_SHLDAP_PREFLIGHT_PHP_VERSION', PHP_VERSION, self::MIN_PHP_VERSION),
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 				'error'
 			);
 
@@ -60,7 +90,11 @@ class Com_ShldapInstallerScript
 
 		if ($type == 'install' || $type == 'update')
 		{
+<<<<<<< HEAD
 			$db = JFactory::getDbo();
+=======
+			$db = Factory::getDbo();
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 			$query = $db->getQuery(true);
 
 			$query->select($db->quoteName('value'))
@@ -77,8 +111,13 @@ class Com_ShldapInstallerScript
 						return true;
 					}
 
+<<<<<<< HEAD
 					JFactory::getApplication()->enqueueMessage(
 						JText::sprintf('COM_SHLDAP_PREFLIGHT_PLATFORM_VERSION', $version, self::MIN_PLATFORM_VERSION),
+=======
+					Factory::getApplication()->enqueueMessage(
+						Text::sprintf('COM_SHLDAP_PREFLIGHT_PLATFORM_VERSION', $version, self::MIN_PLATFORM_VERSION),
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 						'error'
 					);
 
@@ -90,7 +129,11 @@ class Com_ShldapInstallerScript
 			}
 
 			// Platform is missing
+<<<<<<< HEAD
 			JFactory::getApplication()->enqueueMessage(JText::_('COM_SHLDAP_PREFLIGHT_PLATFORM_NOT_INSTALLED'), 'error');
+=======
+			Factory::getApplication()->enqueueMessage(Text::_('COM_SHLDAP_PREFLIGHT_PLATFORM_NOT_INSTALLED'), 'error');
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 
 			return false;
 		}
@@ -111,7 +154,11 @@ class Com_ShldapInstallerScript
 	{
 		if ($type == 'install' || $type == 'update')
 		{
+<<<<<<< HEAD
 			$db = JFactory::getDbo();
+=======
+			$db = Factory::getDbo();
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 
 			// Update the LDAP version
 			$db->setQuery(

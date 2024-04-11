@@ -1,18 +1,32 @@
 <?php
 /**
+<<<<<<< HEAD
  * PHP Version 5.3
+=======
+ * PHP Version 8.1
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
  *
  * @package     Shmanic.Plugin
  * @subpackage  Ldap.Injection
  * @author      Shaun Maunder <shaun@shmanic.com>
+<<<<<<< HEAD
  *
+=======
+ * @edited		2024
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
  * @copyright   Copyright (C) 2011-2013 Shaun Maunder. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 defined('JPATH_PLATFORM') or die;
 
+<<<<<<< HEAD
 jimport('joomla.plugin.plugin');
+=======
+use Joomla\CMS\Plugin\CMSPlugin;
+use Joomla\CMS\Factory;
+use Joomla\CMS\Form\Form;
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 
 /**
  * LDAP Form Injection Plugin
@@ -21,7 +35,11 @@ jimport('joomla.plugin.plugin');
  * @subpackage  Ldap.Injection
  * @since       2.0
  */
+<<<<<<< HEAD
 class PlgLdapInjection extends JPlugin
+=======
+class PlgLdapInjection extends CMSPlugin
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 {
 	protected $passwordForms = array();
 
@@ -65,7 +83,11 @@ class PlgLdapInjection extends JPlugin
 	/**
 	 * Injects several fields into specific forms.
 	 *
+<<<<<<< HEAD
 	 * @param   JForm  $form  The form to be altered.
+=======
+	 * @param   Form  $form  The form to be altered.
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 	 * @param   array  $data  The associated data for the form.
 	 *
 	 * @return  boolean
@@ -75,7 +97,11 @@ class PlgLdapInjection extends JPlugin
 	public function onContentPrepareForm($form, $data)
 	{
 		// Check we are manipulating a valid form
+<<<<<<< HEAD
 		if (!($form instanceof JForm))
+=======
+		if (!($form instanceof Form))
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 		{
 			$this->_subject->setError('JERROR_NOT_A_FORM');
 
@@ -91,8 +117,13 @@ class PlgLdapInjection extends JPlugin
 				if ($this->params->get('ldap_password_layout_edit', true))
 				{
 					// Check if this is in the 'edit' layout or in the save state
+<<<<<<< HEAD
 					if ((strtolower(JFactory::getApplication()->input->get('layout')) === 'edit')
 						|| (strtolower(JFactory::getApplication()->input->get('task')) === 'save'))
+=======
+					if ((strtolower(Factory::getApplication()->input->get('layout')) === 'edit')
+						|| (strtolower(Factory::getApplication()->input->get('task')) === 'save'))
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 					{
 						$form->loadFile(realpath(__DIR__) . '/forms/ldap_password.xml', false, false);
 					}

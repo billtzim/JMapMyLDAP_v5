@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="plugin" group="ldap" method="upgrade">
 	<name>plg_ldap_profile</name>
+<<<<<<< HEAD
 	<author>Shaun Maunder</author>
 	<creationDate>December 2023</creationDate>
 	<copyright>Copyright (C) 2013 Shaun Maunder. All rights reserved.</copyright>
@@ -9,6 +10,16 @@
 	<authorUrl>www.shmanic.com</authorUrl>
 	<version>2.0.4</version>
 	<buildDate>Wed Feb 25 18:47:50 2015</buildDate>
+=======
+	<author>Giannis Brailas</author>
+	<creationDate>Apr 2024</creationDate>
+	<copyright>Copyright (C) 2013 Shaun Maunder. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>jbrailas@rns-systems.eu</authorEmail>
+	<authorUrl>www.rns-systems.eu</authorUrl>
+	<version>5.0</version>
+	<buildDate>Fri Apr 04 11:47:50 2024</buildDate>
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 	<description>PLG_LDAP_PROFILE_XML_DESCRIPTION</description>
 	<files>
 		<filename plugin="profile">profile.php</filename>

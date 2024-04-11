@@ -12,15 +12,23 @@
  * @package     Shmanic.Plugin
  * @subpackage  SSO
  * @author      Shaun Maunder <shaun@shmanic.com>
+<<<<<<< HEAD
  *
  * @copyright   Copyright (C) 2011-2013 Shaun Maunder. All rights reserved.
  * edited for Joomla 5
+=======
+ * @edited		2024
+ * @copyright   Copyright (C) 2011-2013 Shaun Maunder. All rights reserved.
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 defined('JPATH_PLATFORM') or die;
 
+<<<<<<< HEAD
 //jimport('joomla.plugin.plugin');
+=======
+>>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 use Joomla\CMS\Input\Input;
 use Joomla\CMS\Plugin\CMSPlugin;
 

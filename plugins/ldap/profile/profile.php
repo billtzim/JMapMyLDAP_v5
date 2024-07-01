@@ -28,10 +28,6 @@ use Joomla\CMS\Factory;
 use Joomla\CMS\Form\Form;
 use Joomla\CMS\Log\Log;
 use Joomla\CMS\User\UserHelper;
-<<<<<<< HEAD
-//jimport('joomla.plugin.plugin');
-=======
->>>>>>> 900d22413d1e7811ec851730b296f2d48c37d7a8
 
 /**
  * LDAP Profile Plugin

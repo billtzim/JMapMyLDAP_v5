@@ -603,7 +603,8 @@ abstract class SHLdapHelper
 		// Create a new adapter
 		if ($type = ucfirst(strtolower($type ?? '')))
 		{
-			$class = "SHUserAdapters${type}";
+			// $class = "SHUserAdapters${type}";
+			$class = "SHUserAdapters$type";
 
 			$adapter = new $class(array('username' => '', 'password' => ''));
 

@@ -109,7 +109,7 @@ class ShldapControllerHost extends JControllerForm
 		$lang  = JFactory::getLanguage();
 		$model = $this->getModel();
 		//$data  = JRequest::getVar('jform', array(), 'post', 'array');
-		$data = $app->get('jform', array(), 'post', 'array');
+		$data = $app->input->get('jform', array(), 'post', 'array');
 
 		$context = "$this->option.edit.$this->context";
 
